@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<AlteryxJavaScriptPlugin>
+  <EngineSettings EngineDll="Python" EngineDllEntryPoint="FileCopyMoveEngine.py" SDKVersion="10.1" />
+  <GuiSettings Html="FileCopyMoveGUI.html" Icon="FileCopyMoveIcon.png" Help="" SDKVersion="10.1">
+    <InputConnections>
+      <Connection Name="Input" AllowMultiple="False" Optional="False" Type="Connection" Label="I"/>
+    </InputConnections>
+    <OutputConnections>
+      <Connection Name="Output" AllowMultiple="False" Optional="False" Type="Connection" Label="O"/>
+	  <Connection Name="ErrorOutput" AllowMultiple="False" Optional="False" Type="Connection" Label="E"/>
+    </OutputConnections>
+  </GuiSettings>
+  <Properties>
+    <MetaInfo>
+      <Name>File Copy-Move</Name>
+      <Description>Copies or moves files while optionally creating destination directories</Description>
+      <CategoryName>File System</CategoryName>
+      <SearchTags>python, move, copy, files</SearchTags>
+      <ToolVersion>1.0</ToolVersion>
+      <Author>Bob Peers</Author>
+      <Company></Company>
+      <Copyright>2020</Copyright>
+    </MetaInfo>
+  </Properties>
+</AlteryxJavaScriptPlugin>

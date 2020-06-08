@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>File Copy and Move</title>
+  <script type="text/javascript">
+    document.write('<link rel="import" href="' + window.Alteryx.LibDir + '2/lib/includes.html">');
+  </script>
+</head>
+<body>
+  <h1>File Copy and Move</h1>
+  <section>
+    <div class='info'>
+      <div>This tool copies or moves files from one location to another.</div>
+      <div>If you do not select the 'Create Directories' checkbox and the destination folder does not already exist the process will fail.</div>
+      <div>If the destination is a folder then the files will be moved or copied uisng their current names. If you create a destination that includes the filename then the files will also be renamed.</div>
+    </div>
+  </section>
+  <form>
+    <fieldset>
+      <legend>XMSG("Select Options")</legend>
+      <section>
+        <label>XMSG("Select the source file path:")</label>
+        <ayx data-ui-props="{type: 'DropDown'}" data-item-props="{dataName: 'SourceField', dataType: 'FieldSelector', fieldType: 'String', anchorIndex:'0', connectionIndex:'0'}"></ayx>
+	</section>
+	<section>
+		<label>XMSG("Select the destination file path:")</label>
+        <ayx data-ui-props="{type: 'DropDown'}" data-item-props="{dataName: 'DestField', dataType: 'FieldSelector', fieldType: 'String', anchorIndex:'0', connectionIndex:'0'}"></ayx>
+	</section>
+	<section>
+        <label>XMSG("Check here to move files instead of copying")</label>
+		    <ayx id="DoMove" data-ui-props="{type:'CheckBox', label:'Move Files'}" data-item-props="{dataName:'DoMove'}"></ayx>
+    </section>
+    <section>
+      <label>XMSG("Check here to create missing directories in destination path")</label>
+      <ayx id="CreateDirs" data-ui-props="{type:'CheckBox', label:'Create Directories'}" data-item-props="{dataName:'CreateDirs'}"></ayx>
+  </section>
+    </fieldset>
+  </form>
+
+  <style>
+    .info {
+        border:2px solid #EA7C7C;
+        border-radius: 5px;
+        padding:10px;
+    }
+
+    .info>div {margin:10px 0 10px 0;}
+  
+    body {
+      font-size: 10pt;
+      font-family: Arial, sans-serif;
+      margin:20px;
+    }
+	
+    legend {
+	    border:none;
+    }
+	
+	fieldset {
+		border: 2px solid #EA7C7C;
+    border-radius: 5px;
+	}
+		
+	section,label, select, checkbox, ayx {
+		padding: 10px 0 10px 0;	
+	}
+  </style>
+</body>
+</html>
