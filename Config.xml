@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <AlteryxJavaScriptPlugin>
   <EngineSettings EngineDll="Python" EngineDllEntryPoint="FileCopyMoveEngine.py" SDKVersion="10.1" />
-  <GuiSettings Html="FileCopyMoveGUI.html" Icon="FileCopyMove/FileCopyMoveIcon.png" Help="" SDKVersion="10.1">
+  <GuiSettings Html="FileCopyMoveGUI.html" Icon="FileCopyMove/FileCopyMoveIcon.png" Help="https://github.com/bobpeers/Alteryx_SDK_FileCopyMove" SDKVersion="10.1">
     <InputConnections>
       <Connection Name="Input" AllowMultiple="False" Optional="False" Type="Connection" Label="I"/>
     </InputConnections>
