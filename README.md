@@ -1,6 +1,10 @@
 # Alteryx SDK Tool - File Copy and Move
 Alteryx tool to copy or move files
 
+
+## Installation
+Download the yxi files and double click to install in Alteyrx. The tool will be installed in a new Category called **File System**
+
 ## Usage
 Copies or moves files from source to destination. If the destination is a path the filenames will be unchanged, otherwise it will use the provised filename.
 
