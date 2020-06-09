@@ -3,12 +3,14 @@ Alteryx tool to copy or move files
 
 
 ## Installation
-Download the yxi files and double click to install in Alteyrx. The tool will be installed in a new Category called **File System**
+Download the yxi files and double click to install in Alteyrx. The tool will be installed in a new Category called __File System__
 
 ![alt text](https://github.com/bobpeers/Alteryx_SDK_FileCopyMove/blob/master/images/AlteryxCategory.png "Alteryx File system Category")
 
 ## Usage
-Copies or moves files from source to destination. If the destination is a path the filenames will be unchanged, otherwise it will use the provised filename.
+Copies or moves files from source to destination. If the destination is a path the filenames will be unchanged, otherwise it will use the provided filename.
+
+__Exisitng files with the same name will be overwritten.__
 
 You can optionally create the detination path so it's possible to create dynamic destination directories using dates and times for example.
 
