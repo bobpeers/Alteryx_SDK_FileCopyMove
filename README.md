@@ -3,7 +3,7 @@ Alteryx tool to copy or move files
 
 
 ## Installation
-Download the yxi files and double click to install in Alteyrx. The tool will be installed in a new Category called __File System__
+Download the yxi file and double click to install in Alteyrx. The tool will be installed in a new Category called __File System__
 
 ![alt text](https://github.com/bobpeers/Alteryx_SDK_FileCopyMove/blob/master/images/AlteryxCategory.png "Alteryx File system Category")
 
